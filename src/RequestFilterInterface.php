@@ -4,7 +4,7 @@ namespace Panlatent\Http\Server;
 
 use Psr\Http\Message\ServerRequestInterface;
 
-interface RequestFilterInterface
+interface RequestFilterInterface extends FilterInterface
 {
     /**
      * Process an incoming server request.
