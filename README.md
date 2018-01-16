@@ -7,5 +7,5 @@ HTTP Server Filter
 [![License](https://poser.pugx.org/panlatent/http-server-filter/license.svg)](https://packagist.org/packages/panlatent/http-server-filter)
 
 Provides the `FilterInterface` to filter server response. The difference between 
-`Filter` and `Middleware` is that the filter does not care about HTTP request.
+`Filter` and `Middleware` is that the filter does convert object type.
 
