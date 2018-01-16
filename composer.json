@@ -13,8 +13,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.0",
-        "psr/http-message": "^1.0",
-        "http-interop/http-server-handler": "~1.0"
+        "psr/http-message": "^1.0"
     },
     "autoload": {
         "psr-4": {
@@ -25,11 +24,5 @@
         "branch-alias": {
             "dev-master": "1.0.x-dev"
         }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/panlatent/http-server-handler"
-        }
-    ]
+    }
 }
