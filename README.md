@@ -15,7 +15,9 @@ Installation
 ------------
 It's recommended that you use [Composer](https://getcomposer.org/) to install this library.
 
+```bash
 $ composer require aurora/http-message-filter
+```
 
 This will install HTTP Message Filter and all required dependencies. The library requires PHP 7.0 or newer.
 
