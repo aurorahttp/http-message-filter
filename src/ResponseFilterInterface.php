@@ -4,10 +4,10 @@ namespace Aurora\Http\Message\Filter;
 
 use Psr\Http\Message\ResponseInterface;
 
-interface ResponseFilterInterface
+interface ResponseFilterInterface extends FilterInterface
 {
     /**
-     * Process an incoming server response.
+     * Process an incoming response.
      *
      * @param ResponseInterface        $response
      * @return ResponseInterface

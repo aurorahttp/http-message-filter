@@ -4,7 +4,7 @@ namespace Aurora\Http\Message\Filter;
 
 use Psr\Http\Message\RequestInterface;
 
-interface RequestFilterInterface
+interface RequestFilterInterface extends FilterInterface
 {
     /**
      * Process an incoming request.
