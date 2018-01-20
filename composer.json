@@ -1,5 +1,5 @@
 {
-    "name": "aurorahttp/http-message-filter",
+    "name": "aurora/http-message-filter",
     "description": "Common interfaces for HTTP message filter",
     "keywords": ["psr", "psr-7", "filter", "request", "response", "http", "server"],
     "type": "library",
