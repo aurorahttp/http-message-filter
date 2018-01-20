@@ -2,15 +2,15 @@
 
 namespace Aurora\Http\Message\Filter;
 
-use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Message\RequestInterface;
 
 interface RequestFilterInterface
 {
     /**
-     * Process an incoming server request.
+     * Process an incoming request.
      *
-     * @param ServerRequestInterface $request
-     * @return ServerRequestInterface
+     * @param RequestInterface $request
+     * @return RequestInterface
      */
-    public function process(ServerRequestInterface $request): ServerRequestInterface;
+    public function process(RequestInterface $request): RequestInterface;
 }
