@@ -1,10 +1,10 @@
 <?php
 
-namespace Panlatent\Http\Server;
+namespace Aurora\Http\Message\Filter;
 
 use Psr\Http\Message\ResponseInterface;
 
-interface ResponseFilterInterface extends FilterInterface
+interface ResponseFilterInterface
 {
     /**
      * Process an incoming server response.

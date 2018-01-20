@@ -1,7 +1,7 @@
 {
-    "name": "panlatent/http-server-filter",
-    "description": "Common interface for HTTP server-side response filter",
-    "keywords": ["psr", "psr-7", "psr-15", "filter", "response", "http", "server"],
+    "name": "aurora/http-message-filter",
+    "description": "Common interfaces for HTTP message filter",
+    "keywords": ["psr", "psr-7", "filter", "request", "response", "http", "server"],
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Panlatent\\Http\\Server\\": "src/"
+            "Aurora\\Http\\Message\\Filter\\": "src/"
         }
     },
     "extra": {
