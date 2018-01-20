@@ -1,7 +1,6 @@
 HTTP Message Filter
 ==================
-[![Build Status](https://travis-ci.org/aurorahttp/http-message-filter.svg)](https://travis-ci
-.org/aurorahttp/http-message-filter)
+[![Build Status](https://travis-ci.org/aurorahttp/http-message-filter.svg)](https://travis-ci.org/aurorahttp/http-message-filter)
 [![Latest Stable Version](https://poser.pugx.org/aurora/http-message-filter/v/stable.svg)](https://packagist.org/packages/aurora/http-message-filter)
 [![Total Downloads](https://poser.pugx.org/aurora/http-message-filter/downloads.svg)](https://packagist.org/packages/aurora/http-message-filter) 
 [![Latest Unstable Version](https://poser.pugx.org/aurora/http-message-filter/v/unstable.svg)](https://packagist.org/packages/aurora/http-message-filter)
