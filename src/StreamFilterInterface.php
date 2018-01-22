@@ -4,7 +4,7 @@ namespace Aurora\Http\Message\Filter;
 
 use Psr\Http\Message\StreamInterface;
 
-interface StreamFilterInterface
+interface StreamFilterInterface extends FilterInterface
 {
     /**
      * Process an incoming stream.
