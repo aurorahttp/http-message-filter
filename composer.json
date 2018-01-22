@@ -20,12 +20,12 @@
             "Aurora\\Http\\Message\\Filter\\": "src/"
         }
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        }
-    },
     "require-dev": {
         "phpunit/phpunit": "^6.5"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
     }
 }
