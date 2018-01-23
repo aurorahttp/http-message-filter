@@ -2,7 +2,7 @@
 
 namespace Aurora\Http\Message\Filter;
 
-use Aurora\Http\Handle\HandlerInterface;
+use Aurora\Http\Handler\HandlerInterface;
 
 interface FilterInterface extends HandlerInterface
 {
