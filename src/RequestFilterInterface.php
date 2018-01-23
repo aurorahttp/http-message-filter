@@ -12,5 +12,5 @@ interface RequestFilterInterface extends FilterInterface
      * @param RequestInterface $request
      * @return RequestInterface
      */
-    public function process(RequestInterface $request): RequestInterface;
+    public function processRequest(RequestInterface $request): RequestInterface;
 }

@@ -12,5 +12,5 @@ interface StreamFilterInterface extends FilterInterface
      * @param StreamInterface $stream
      * @return StreamInterface
      */
-    public function process(StreamInterface $stream): StreamInterface;
+    public function processStream(StreamInterface $stream): StreamInterface;
 }

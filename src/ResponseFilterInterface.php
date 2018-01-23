@@ -12,5 +12,5 @@ interface ResponseFilterInterface extends FilterInterface
      * @param ResponseInterface        $response
      * @return ResponseInterface
      */
-    public function process(ResponseInterface $response): ResponseInterface;
+    public function processResponse(ResponseInterface $response): ResponseInterface;
 }

@@ -2,30 +2,21 @@
 
 namespace Aurora\Http\Message\Filter;
 
-use Aurora\Http\Handler\HandlerInterface;
 use Psr\Http\Message\MessageInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use Psr\Http\Message\ServerRequestInterface;
 
-abstract class Filter implements FilterInterface, HandlerInterface
+abstract class Filter implements FilterInterface
 {
-    public function handle($request, HandlerInterface $next)
+    public function process(MessageInterface $message): MessageInterface
     {
-        if (! $request instanceof MessageInterface) {
-            return $next->handle($request, $next);
+        if ($this instanceof ResponseFilterInterface && $message instanceof ResponseInterface) {
+            $message = $this->processResponse($message);
         }
-        if ($this instanceof ServerRequestFilterInterface && $request instanceof
-            ServerRequestInterface) {
-            $request = $this->process($request);
-        } elseif ($this instanceof RequestFilterInterface && $request instanceof RequestInterface) {
-            $request = $this->process($request);
-        } elseif ($this instanceof ResponseFilterInterface && $request instanceof ResponseInterface) {
-            $request = $this->process($request);
-        } else {
-            $request = $this->process($request);
+        if ($this instanceof RequestFilterInterface && $message instanceof RequestInterface) {
+            $message = $this->processRequest($message);
         }
 
-        return $next->handle($request, $next);
+        return $message;
     }
 }
